@@ -6,125 +6,35 @@
 
 body{
     font-family: 'Krub', sans-serif;
-    margin-right: 0;
+   
+   
+    /* background: linear-gradient(135deg, #2f2f2f, #121212);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff; Adjust text color for visibility */
    
 }
 .bgp{
-  background-color: rgb(19, 199, 115);
+  padding-top: 20px;
+  background-color: rgb(33,37,41);
+  box-shadow: 0 0 50px rgba(0, 0, 255, 0.2);
+}
+.herotext{
+  margin-top: 20vh;
+  margin-left: 15vw;
+}
+.heroimage{
+  width: 30vw;
+  margin-top: 15vh;
+  margin-right: 15vw;
+  /* box-shadow: 0 0 50px rgba(0, 0, 255, 0.2); */
   
 }
-#hero {
-  width: 100%;
-  height: 70vh;
-  background-color: rgba(31, 38, 39, 0.8);
-  overflow: hidden;
-  position: relative;
-  padding: 0;
-  margin-top: 114px;
+.herohead{
+  font-size: 4rem;
 }
-
-#hero .carousel-item {
-  width: 100%;
-  height: 70vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-#hero .carousel-item::before {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
-
-#hero .carousel-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#hero .carousel-content {
-  text-align: center;
-}
-
-#hero h2 {
-  color: #fff;
-  margin-bottom: 30px;
-  font-size: 48px;
-  font-weight: 700;
-}
-
-#hero p {
-  width: 80%;
-  animation-delay: 0.4s;
-  margin: 0 auto 30px auto;
-  color: #fff;
-}
-
-#hero .carousel-inner .carousel-item {
-  transition-property: opacity;
-  background-position: center top;
-}
-
-#hero .carousel-inner .carousel-item,
-#hero .carousel-inner .active.carousel-item-start,
-#hero .carousel-inner .active.carousel-item-end {
-  opacity: 0;
-}
-
-#hero .carousel-inner .active,
-#hero .carousel-inner .carousel-item-next.carousel-item-start,
-#hero .carousel-inner .carousel-item-prev.carousel-item-end {
-  opacity: 1;
-  transition: 0.5s;
-}
-
-#hero .carousel-inner .carousel-item-next,
-#hero .carousel-inner .carousel-item-prev,
-#hero .carousel-inner .active.carousel-item-start,
-#hero .carousel-inner .active.carousel-item-end {
-  left: 0;
-  transform: translate3d(0, 0, 0);
-}
-
-#hero .carousel-control-prev,
-#hero .carousel-control-next {
-  width: 10%;
-}
-
-#hero .carousel-control-next-icon,
-#hero .carousel-control-prev-icon {
-  background: none;
-  font-size: 48px;
-  line-height: 1;
-  width: auto;
-  height: auto;
-}
-
-#hero .carousel-indicators li {
-  list-style-type: none;
-  cursor: pointer;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  margin: 0 4px;
-  transition: ease-in;
-  opacity: 0.7;
-}
-
-#hero .carousel-indicators li.active {
-  opacity: 1;
-  background-color: #01b1d7;
+.tu{
+  margin-bottom: 150px;
 }
 
 #hero .btn-get-started {
@@ -193,6 +103,7 @@ body{
     font-style: italic;
    font-size: 4rem;
 }
+
 @keyframes fadeinleft{
 from{
     opacity: 0;

@@ -1,10 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const elementhead = document.querySelector(".head");
-    const elementsubh = document.querySelector(".subh");
-    const elementheroimage = document.querySelector(".heroimage");
-    elementsubh.classList.add("fade-in-right");
-    elementhead.classList.add("fade-in-left");
-    elementheroimage.classList.add("zoom-in");
+        const elementheroimage = document.querySelector(".tu");
+       elementheroimage.classList.add("zoom-in");
 });
 // document.addEventListener("scroll",function(){
 //     const chestt = document.querySelector(".chesttext")

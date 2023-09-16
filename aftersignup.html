@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -9,21 +9,21 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Krub:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@500&display=swap" rel="stylesheet">
   <title>Labotics</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg  bg-gradient fs-5 bgp sticky-top">
+  <nav class="navbar navbar-expand-lg  fs-5 bgp sticky-top">
  
     <div class="container-fluid">
-      <a class="navbar-brand fs-5 " href="#">Labotics</a>
+      <a class="navbar-brand fs-5 mx-5 " href="#">Labotics</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-3">
           <li class="nav-item mx-2">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
@@ -47,42 +47,46 @@
             <a class="nav-link disabled " aria-disabled="true">Register as lab</a>
           </li>
         </ul>
-        <div class="login ">
+        <div class="login mx-5">
          
-          <!-- <button type="button" class="btn btn-primary btn-sm bg-gradient"><a href="login.html" style="text-decoration: none;" >Login</a></button> -->
-          <button type="button" class="btn btn-danger btn-sm bg-gradient"><a href="index.html" style="text-decoration: none;">Sign Out</a></button>
+          <!-- <button type="button" class="btn btn-primary btn-m bg-gradient mx-2 rounded-2 "><a href="login.html" style="text-decoration: none;" >Login</a></button> -->
+          <button type="button" class="btn btn-success btn-m bg-gradient mx-2  rounded-2"><a href="index.html" style="text-decoration: none;">Sign Out</a></button>
         </div>
       </div>
     </div>
   </nav>
-  <div class="centrekr my-3 py-3 ">
-    <div class="head">Labotics</div>
+ <div class="tu d-flex flex-row justify-content-between ">
+  <div class=" herotext" style="width: 30vw;">
+    <div class="fs-1 "><p class="herohead">The Easiest way to Find Labs</p></div>
 
-    <div class="centrekr subh " style="width: 82%;">
-      <h1> The most efficient way to find nearby diagnostic labs. Discover verified listings, read reviews, and </h1>
-      <h1>schedule appointments for hassle-free healthcare access.</h1>
-    </div>
+    <div class=" " >
+      <h1 class="fs-4"> Discover verified listings, read reviews, and schedule appointments.</h1>
+        </div>
   </div>
+  
+    <img class="heroimage" src="images/download.png" alt="">
+ 
+ </div>
+      
+
+  
   <div class="getstarted centrekr">
-    <button type="button" class="btn btn-primary btn-lg shadow-lg p-4   rounded">
+    <button type="button" class="btn btn-primary btn-m shadow-lg rounded">
       <div class="buttontext">
-        <h3>Get Started</h3>
+        <h3><a href="search.html">Get Started</a></h3>
       </div>
     </button>
   </div>
-  <div class="centrekr heroimage ">
-    <img src="images/resizedhero1.jpg" alt="">
-  </div>
-  <h2 class="my-4" style="text-align: center;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-       font-size: 4rem; "> Features </h2>
+  
+  
   <div class="centrekr">
+    <h2 class="my-4 head" > Features </h2>
     <div class="after"></div>
   </div>
-  <div class="chestsection " style="margin: 100px;">
+  <div class="chestsection " >
     <div class="chesttext left">
-      <h1 style="font-size: 4rem; font-weight: 800;">Advanced Search and Filtering</h1>
-      <p style="font-size: 2rem;">Effortlessly find labs that meet your specific needs using our powerful search and
+      <h1 class="head">Advanced Search and Filtering</h1>
+      <p style="font-size: 1.5rem;">Effortlessly find labs that meet your specific needs using our powerful search and
         filtering options. Search by location, test type, price range, and more.</p>
     </div>
     <div class="empty"></div>
@@ -90,7 +94,7 @@
       <img src="images/chestimager2.jpg" alt="">
     </div>
   </div>
-  <div class="chestsection " style="margin: 100px;">
+  <div class="chestsection " >
 
 
     <div class="chestimage2 left">
@@ -98,15 +102,15 @@
     </div>
     <div class="empty"></div>
     <div class="chesttext2 right">
-      <h1 style="font-size: 4rem; font-weight: 800;">Comprehensive Lab Database</h1>
-      <p style="font-size: 2rem;">Explore an extensive database of labs, each with detailed information about their
+      <h1 class="head">Comprehensive Lab Database</h1>
+      <p style="font-size: 1.5rem;">Explore an extensive database of labs, each with detailed information about their
         services, locations, and pricing.</p>
     </div>
   </div>
-  <div class="chestsection " style="margin: 100px;">
+  <div class="chestsection " >
     <div class="chesttext3 left">
-      <h1 style="font-size: 4rem; font-weight: 800;">User Reviews and Ratings</h1>
-      <p style="font-size: 2rem;"> User reviews and ratings to gain insights into the quality and reputation of labs in
+      <h1 class="head">User Reviews and Ratings</h1>
+      <p style="font-size: 1.5rem;"> User reviews and ratings to gain insights into the quality and reputation of labs in
         your area. Share your own experiences to help others make informed choices.</p>
     </div>
     <div class="empty"></div>
@@ -115,9 +119,7 @@
     </div>
   </div>
   <div class="centrekr">
-    <h2 class="my-4" style="text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 4rem; "> Contact Us </h2>
+    <h2 class="my-4 head" > Contact Us </h2>
     <div class="after">
     </div>
     <h4 class="my-3">...Feel free to contact Us...</h4>
@@ -125,15 +127,15 @@
   <footer>
     <div class="footer-1">
         <div class="content">
-            <div class="left box gap">
+            <!-- <div class="left box gap">
                 <div class="upper">
                     <div class="topic">About us</div>
                     <p>Labotics is not just a website; it's a healthcare empowerment tool. By offering a one-stop solution for locating diagnostic labs, comparing prices, and making informed choices, Labotics is poised to transform the way individuals approach their healthcare needs. In an increasingly complex healthcare landscape, Labotics stands as a beacon of simplicity, transparency, and affordability, making it an invaluable resource for anyone seeking quality diagnostic services.</p>
                 </div>
-            </div>
+            </div> -->
             <div class="middle box gap">
-                <div class="topic">General Message </div>
-                <p>I'm thrilled to introduce you to Labotics, a labor of love aimed at making your healthcare decisions easier and more affordable. I hope this platform empowers you to take control of your health journey and find the best diagnostic solutions for your needs.</p>
+                <div class="topic">Location </div>
+                
                 <div><i class="fa fa-smile-o" , style="color:#e0b02c"></i>
                     <i class="fa fa-smile-o" , style="color:#e0b02c"></i>
                     <i class="fa fa-smile-o" , style="color:#e0b02c"></i>
@@ -157,10 +159,8 @@
                             class="fab fa-instagram"></i></a>
                     <a class="linkedin gap" href="/" target="_blank"
                         title="LinkedIn" rel="noopener noreferrer" aria-label="Follow us on LinkedIn"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a class="Github gap" href="/" target="_blank" title="GitHub"
-                        rel="noopener noreferrer" aria-label="Follow us on GitHub"><i
-                            class="fab fa-github-square"></i></a>
+                            class="fa fa-phone-volume"></i></a>
+     
                     <a class="Blog gap" href="#" target="_blank" title="Blog" rel="noopener noreferrer"
                         aria-label="Follow us on Blog"><i class="fa fa-rss-square"></i></a>
                 </div>
@@ -176,30 +176,8 @@
   <!-- <script src="login.js" type="module"></script> -->
 <script src="js/bootstrap.bundle.min.js"></script>
   <script src="logic.js"></script>
+  
   <script src="https://kit.fontawesome.com/02dcb82b73.js" crossorigin="anonymous"></script>
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-   import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js';
-   import { getAuth } from 'https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js';
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyCDJPkMheOnWSJnMIozfsQcdA2Scsd5P8Q",
-      authDomain: "labquest-3aea4.firebaseapp.com",
-      projectId: "labquest-3aea4",
-      storageBucket: "labquest-3aea4.appspot.com",
-      messagingSenderId: "637763619838",
-      appId: "1:637763619838:web:5f1674f6cb716765f0ceaf"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
-  </script> 
-  <script src="aftersignup.js" defer type="module"></script>
-  
 </body>
 
 </html>
