@@ -1,3 +1,15 @@
+function updateHTMLContent() {
+  const newText2 = sessionStorage.getItem('link');
+  if (newText2) {
+    document.querySelector('.linkout').innerHTML = newText2;
+  }
+}
+ 
+updateHTMLContent();
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
         const elementheroimage = document.querySelector(".tu");
        elementheroimage.classList.add("zoom-in");

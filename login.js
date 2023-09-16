@@ -14,9 +14,9 @@ signInWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     // Signed in 
     const user = userCredential.user; 
-  
-    window.location.href = 'aftersignup.html'
-    alert('login successful')
+    sessionStorage.setItem('link', 'Sign Out');
+    window.location.href = 'index.html'
+        alert('login successful')
     
   })
   .catch((error) => {

@@ -17,7 +17,9 @@
         // Signed in 
         const user = userCredential.user;
        alert('Signup successful')
-       window.location.href = 'aftersignup.html'
+      //  sessionStorage.setItem('newText1', 'Sign Out');
+       sessionStorage.setItem('link', 'Sign Out');
+       window.location.href = 'index.html'
         console.log(user)
       })
       .catch((error) => {
@@ -26,6 +28,8 @@
          console.log(errorMessage)
          alert(errorMessage)
       });
+
+      
     
   })
     
