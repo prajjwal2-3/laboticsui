@@ -20,24 +20,25 @@ body{
   box-shadow: 0 0 10px rgba(0, 0, 25, 0.2);
 }
 .herotext{
-  margin-top: 20vh;
-  margin-left: 15vw;
+  
+  margin-top: 15vh;
+  /* margin-left: 15vw; */
 }
 .heroimage{
   width: 30vw;
-  margin-top: 15vh;
-  margin-right: 15vw;
+  /* margin-top: 6vh;
+  margin-right: 15vw; */
   /* box-shadow: 0 0 50px rgba(0, 0, 255, 0.2); */
   
 }
 .herotext2{
   margin-top: 20vh;
-  margin-right: 15vw;
+  /* margin-right: 15vw; */
 }
 .heroimage2{
   width: 30vw;
-  margin-top: 15vh;
-  margin-left: 10vw;
+  /* margin-top: 15vh;
+  margin-left: 10vw; */
   /* box-shadow: 0 0 50px rgba(0, 0, 255, 0.2); */
   
   
