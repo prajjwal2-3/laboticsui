@@ -1,11 +1,20 @@
-function updateHTMLContent() {
-  const newText2 = sessionStorage.getItem('link');
-  if (newText2) {
-    document.querySelector('.linkout').innerHTML = newText2;
-  }
-}
+// function updatesignuptosignout() {
+//   const newText2 = sessionStorage.getItem('link');
+//   if (newText2) {
+//     document.querySelector('.linkout').innerHTML = newText2;
+//   }
+// }
  
-updateHTMLContent();
+// updatesignuptosignout();
+
+// function updatesignouttosignup() {
+//   const newText3 = sessionStorage.getItem('signout');
+//   if (newText3) {
+//     document.querySelector('.linkout').innerHTML = newText3;
+//   }
+// }
+ 
+// updatesignouttosignup();
 
 
 

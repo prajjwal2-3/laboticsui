@@ -53,7 +53,7 @@
 
           <button type="button" class="btn btn-primary btn-m bg-gradient mx-2 rounded-2 "><a href="login.html"
               style="text-decoration: none;">Login</a></button>
-          <button type="button" class="btn btn-success btn-m bg-gradient mx-2  rounded-2 linkout"><a href="signup.html"
+          <button type="button" class="btn btn-success btn-m bg-gradient mx-2  rounded-2 linkout "><a href="signup.html"
               style="text-decoration: none;">Sign Up</a></button>
         </div>
       </div>
@@ -196,10 +196,32 @@
       </div>
     </div>
   </footer>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+   import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js';
+   import { getAuth } from 'https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js';
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCDJPkMheOnWSJnMIozfsQcdA2Scsd5P8Q",
+      authDomain: "labquest-3aea4.firebaseapp.com",
+      projectId: "labquest-3aea4",
+      storageBucket: "labquest-3aea4.appspot.com",
+      messagingSenderId: "637763619838",
+      appId: "1:637763619838:web:5f1674f6cb716765f0ceaf"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+  </script> 
   <!-- <script src="login.js" type="module"></script> -->
   <script src="js/bootstrap.bundle.min.js"></script>
   
   <script src="logic.js"></script>
+  <script src="aftersignup.js" defer type="module"></script>
 
   <script src="https://kit.fontawesome.com/02dcb82b73.js" crossorigin="anonymous"></script>
 </body>
