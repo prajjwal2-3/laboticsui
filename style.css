@@ -6,6 +6,7 @@
 
 body{
     font-family: 'Krub', sans-serif;
+    height:100vh ;
    
    
     /* background: linear-gradient(135deg, #2f2f2f, #121212);
@@ -22,7 +23,11 @@ body{
 #typewriter{
   color:	#0D6EFD;
 }
-
+.box1{
+  width: 1vw;
+  height: 2vh;
+  /* background-color:rgba(255, 255, 255, );  */
+}
 
 
 
