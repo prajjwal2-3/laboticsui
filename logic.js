@@ -23,6 +23,62 @@ document.addEventListener("DOMContentLoaded", function () {
         const elementheroimage = document.querySelector(".tu");
        elementheroimage.classList.add("zoom-in");
 });
+
+//typewriter function
+const lines = document.querySelectorAll('.line');
+var typeWriterElement = document.getElementById('typewriter');
+
+// TextArray: 
+var textArray = ["Discover verified listings.","Read User Reviews.","Schedule Appointments.", "Filter by your choice."];
+
+
+function delWriter(text, i, cb) {
+	if (i >= 0 ) {
+		typeWriterElement.innerHTML = text.substring(0, i--);
+		 		
+		setTimeout(function() {
+			delWriter(text, i, cb);
+		},50); 
+	} else if (typeof cb == 'function') {
+		setTimeout(cb,500);
+	}
+};
+
+
+function typeWriter(text, i, cb) {
+	if ( i < text.length+1 ) {
+		typeWriterElement.innerHTML = text.substring(0, i++);
+				
+		setTimeout( function () { 
+			typeWriter(text, i++, cb)
+		},50);
+	} else if (i === text.length+1) {
+		setTimeout( function () {
+			delWriter(text, i, cb)
+		},500);
+	}
+};
+
+function StartWriter(i) {
+	if (typeof textArray[i] == "undefined") {
+		setTimeout( function () {
+			StartWriter(0)
+		},1000);
+	} else if(i < textArray[i].length+1) {
+		typeWriter(textArray[i], 0, function () {
+			StartWriter(i+1);
+		});
+	}  
+};
+// deri se
+setTimeout( function () {
+	StartWriter(0);
+},1000);
+	
+
+
+
+
 // document.addEventListener("scroll",function(){
 //     const chestt = document.querySelector(".chesttext")
 //     chestt.classList.add("fade-in-left")
@@ -87,4 +143,5 @@ function handleFadeIn(entries, observer) {
   elementsToAnimate2.forEach((element) => {
     observer2.observe(element);
   });
+
   
