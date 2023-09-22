@@ -111,7 +111,7 @@ function handleFadeIn(entries, observer) {
   
 
   const observer = new IntersectionObserver(handleFadeIn, {
-    threshold: 0.2, 
+    threshold: 0.01, 
   });
   
  
@@ -133,7 +133,7 @@ function handleFadeIn(entries, observer) {
   
   
   const observer2 = new IntersectionObserver(handleFadeIn2, {
-    threshold: 0.2, 
+    threshold: 0.01, 
   });
   
 
