@@ -50,6 +50,9 @@
             </ul>
           </li>
           <li class="nav-item mx-2">
+            <a class="nav-link disabled" aria-disabled="true">Register as lab</a>
+          </li>
+          <li class="nav-item mx-2">
             <a class="nav-link disabled " aria-disabled="true">Interpret Your results</a>
           </li>
         </ul>
@@ -83,9 +86,15 @@
   </div>
   <div class="centrekr">
     <button type="button" class="btn btn-primary btn-lg bg-gradient mx-2 rounded-2 mb-3"><a href="search.html"
-      style="text-decoration: none; color: #fff;">Get Started</a></button>
+      style="text-decoration: none; color: #fff;">Get Started  <i class="fa-regular fa-share-from-square" style="margin: 0 10px 0 10px;"></i></a></button>
   </div>
-
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger
+    intent="WELCOME"
+    chat-title="Labotics_Support"
+    agent-id="7dc3e246-cde4-42dd-ba87-993f16baf581"
+    language-code="en"
+  ></df-messenger>
   <div class="centrekr">
     <h2 class="mb-4 head"> Features </h2>
     <div class="after mb-5"></div>
@@ -149,22 +158,27 @@
 
   </div>
  </div>
- <div class="container " >
+
+  </div>
+ </div><div class="container " >
   <div class=" d-flex flex-row justify-content-between rounded-5 mb-5" style="box-shadow: 0 0 100px rgba(0, 0, 25, 0.5);
   padding-left: 100px; padding-right: 100px;
    "> 
     
 
-    <img class="heroimage2 left pure-img" src="images/search.png" alt="">
+    <img class="heroimage2 left pure-img" src="images/search.png" style="margin-bottom: 25px;" alt="">
 
-    <div class=" herotext2 right" style="width: 30vw;">
-      <div class="" >
-        <h1 class="herohead " style="font-size: 3rem;">Body Mass Index(BMI) Calculator</h1>
+    <div class=" herotext2 right" style="width: 35vw; margin-bottom: 25px;">
+      <div class="">
+        <h1 class="herohead " style="font-size: 3rem; font-weight: 500;">Body Mass Index (BMI) Check</h1>
       </div>
 
       <div class=" ">
         <h1 class="fs-5">Enhance user health tracking by including a BMI (Body Mass Index) calculator, allowing users to input their weight and height for instant BMI calculation and personalized health insights.</h1>
       </div>
+      <a class="btn btn-primary" href="bmi.html" role="button" style="margin-left: 45%; padding: 10px; font-size: 22px; margin-top: 15px; margin-bottom: 40px;">Check BMI <i class="fa-regular fa-share-from-square" style="margin: 0 10px 0 10px;"></i></a>
+
+
     </div>
 
   </div>
